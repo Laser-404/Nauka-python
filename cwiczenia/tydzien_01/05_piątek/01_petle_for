@@ -1,0 +1,20 @@
+print("=== SPRAWDZACZ HASŁA (FOR) ===")
+password = input("Podaj hasło: ").strip()
+
+has_digit = False
+has_upper = False
+has_space = (" " in password)
+is_long_enough = len(password) >= 8
+
+for ch in password:
+    if ch.isdigit():
+        has_digit = True
+    if ch.isupper():
+        has_upper = True
+
+print("Czy jest cyfra?", has_digit)
+print("Czy jest duża litera?", has_upper)
+
+
+
+
